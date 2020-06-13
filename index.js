@@ -7,6 +7,9 @@ class Formatter {
     return
   }
   static titleize(string){
-    return string.split(' ').forEach(word => word.charAt(0).toUpperCase() + word.slice(1)).join(' ')
+    let nonCapitalizeWords = ['the', 'a', 'an', 'but', 'of', 'and', 'for
+', 'at', 'by', 'from']
+    let newString = string.split(' ').forEach(word => word ===
+    return newString
   }
 }
