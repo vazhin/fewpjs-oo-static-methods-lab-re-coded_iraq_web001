@@ -7,6 +7,6 @@ class Formatter {
     return
   }
   static titleize(string){
-    return
+    return string.split(' ').forEach(word => word.charAt(0).toUpperCase() + word.slice(1)).join(' ')
   }
 }
